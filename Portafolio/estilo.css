@@ -1,0 +1,68 @@
+.center {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 0.5em; 
+    color: rgb(2, 1, 1);
+}
+
+p {
+    margin: 0.2em 0; 
+    color: rgb(0, 0, 0);
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px; 
+}
+
+h1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+ol{
+    text-align: center;
+}
+
+dt {
+    color: rgb(235, 16, 82);
+    font-size: large;
+}
+
+a {
+    color: rgb(12, 10, 10);
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    color: rgb(58, 45, 45);
+}
+
+.estilop {
+    color: rgb(0, 0, 0);
+    font-size: large;
+}
+
+.caracteristicas {
+    color: rgb(255, 255, 255);
+    background-color: rgb(128, 128, 128);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.perfil-redondo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
