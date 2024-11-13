@@ -55,3 +55,22 @@ footer{
     max-width: center;
     text-align: center;
 }
+.spanuso{
+    color: rgb(230, 19, 19);
+}
+.boton{
+    color: rgb(255, 255, 255);
+    background-color: rgb(102, 102, 102);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.botonbuscar{
+    background-color: rgb(255, 153, 51);
+}
