@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TALLER</title>
+    <link rel="stylesheet" href="estilo.css"> 
+    <style>
+        .center {
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 0.5em; 
+        }
+        p {
+            margin: 0.2em 0; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Formulario</h1>
+        </header>
+        
+        <h2 class="center">Registro de Usuarios</h2>
+        <form action="sublist" method="post">
+            <label for="nombre">First name:</label>
+            <input type="text" id="nombre" name="nombre">
+            <br>
+            <label for="apellido">Last name:</label>
+            <input type="text" id="apellido" name="apellido">
+            <br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email">
+            <button type="reset">Limpiar</button>
+            <br>
+            <label>Tipo persona</label>
+            <select>
+                <option>Estudiante</option>
+                <option>Docente</option>
+                <option>Administrador</option>
+            </select>
+        </form>
+    </div>
+</body>
+</html>
