@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilotablas.css">
+</head>
+<body>
+    <header>
+        <h1>TABLAS</h1>
+        <p>El uso de la etiqueta <em>table</em>, es para el envío y recepción de información</p>
+    </header>
+    <section>
+        <article>
+            <table frame="hsides" rules="rows" border="3px" cellpadding="10px" cellspacing="0px">
+                <caption align="bottom">DATOS</caption>
+                <colgroup>
+                    <col style="background-color: rgb(245, 233, 130);">
+                    <col style="background-color: rgb(236, 229, 121);">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th align="center" width="300px">Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Dirección</th>
+                        <th>Teléfono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td align="center" rowspan="4">David</td>
+                        <td>Moran</td>
+                        <td align="center" rowspan="4">Quito</td>
+                        <td>0982923504</td>
+                    </tr>
+                    <tr>
+                        <td>Moran</td>
+                        <td>0982923504</td>
+                    </tr>
+                    <tr>
+                        <td>Moran</td>
+                        <td>0982923504</td>
+                    </tr>
+                    <tr>
+                        <td>Moran</td>
+                        <td>0982923504</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>sum</td>
+                        <td>sum</td>
+                        <td>sum</td>
+                        <td>0000000000</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+
+        <article>
+            <form action="submit" method= "post">
+                <label for="">Nombres:</label>
+                <input type="text" id="txtNombres" placeholder="nombres">
+                <br>
+                <label for="">Apellidos:</label>
+                <input type="text" id="txtApellidos" placeholder="apellidos">
+                <br>
+                <label for="">Contraseña:</label>
+                <input type="password" minlength="5" maxlength="10" id="txtContraseña" placeholder="contraseña">
+                <br>
+                <label for="">Tipo de persona: </label>
+                <select name="" id="cboTipo">
+                    <option value="">Cliente</option>
+                    <option value="">Empleado</option>
+                    <option value="">Administrador</option>
+                </select>
+                <br><br>
+                <textarea name="" id="comentarios"></textarea>
+                <br>
+                <input type="submit" value="Enviar Datos">
+            </form>
+        </article>
+    </section>
+</body>
+</html>
