@@ -27,41 +27,65 @@ p {
     line-height: 1.5; 
     margin-top: 20px; 
 }
-.aside-left {
-    position: fixed;
-    top: 0; 
-    left: 0; 
-    width: 300px; 
-    height: 100vh; 
-    background-color: #f9f9f9; 
-    padding: 20px; 
-    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.1); 
-    overflow-y: auto; 
+.customer-service {
+    position: absolute;
+    bottom: 0; /* finnna */
+    right: 20px; 
+    width: 250px;
+    height: auto;
+    background-color: rgb(206, 187, 187); 
+    padding: 10px; 
+    text-align: center;
+    font-size: 14px; 
+    font-family: 'Times New Roman', Times, serif; 
+    line-height: 1.5; 
+    border: 1px solid #ccc;
+    border-radius: 8px; 
     z-index: 1000;
 }
+
 .customer-service {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+    position: absolute;
+    bottom: 0; 
+    right: 20px; 
     width: 250px;
-    background-color: #f9f9f9;
+    height: auto;
+    background-color: rgb(206, 187, 187); 
+    padding: 10px; 
+    text-align: justify;
+    font-size: 14px; 
+    font-family: 'Times New Roman', Times, serif; 
+    line-height: 1.5; 
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 8px; 
+    z-index: 1000;
+}
+
+footer {
+    position: relative;
+    background-color: rgb(50, 50, 50);
+    text-align: center;
+    color: white;
+    line-height: 50px;
+}
+
+
+.aside-left {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 250px; 
+    height: 100%; 
+    background-color: rgb(206, 187, 187); 
     padding: 10px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 999;
 }
 
-.customer-service h2 {
-    font-size: 16px;
-    text-align: center;
-    margin-bottom: 10px;
-    color: #333;
-    background: none;  
-    padding: 0; 
-}
 
-.customer-service .content {
-    text-align: center;
-}
+
+
+
 
 .customer-service textarea {
     width: 100%;
@@ -69,8 +93,6 @@ p {
     border: 1px solid #ccc;
     padding: 5px;
     margin-bottom: 10px;
-    outline: none;
-    background-color: #fff; 
 }
 
 .customer-service button {
@@ -82,9 +104,7 @@ p {
     padding: 8px;
     font-size: 14px;
     cursor: pointer;
-    box-shadow: none; 
 }
-
 
 
 

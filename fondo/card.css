@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+}
+
+body{
+    height: 100%;
+    background-color: rgb(157, 200, 232);
+}
+
+.card{
+    box-shadow: #000000 0px 0px 50px;
+    margin: auto;
+    margin-top: 50px;
+    height: 700px;
+    background-color: #ddd;
+    width: 500px;
+}
+
+.card-header{
+    height: 350px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJo3ypevXVbuWmJf-1raghrcTOJC6f47lBvQ&s");
+}
+
+.card-content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 40px;
+}
+
+h4{
+    color: gray;
+}
+
+.size{
+    margin-top: 50px;
+}
+
+.color{
+    margin-top: 40px;
+}
+
+.red{
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 50%;
+    color: red;
+    width: 10px;
+    height: 10px;
+}
+
+.blue{
+    border: 1px solid blue;
+    background-color: blue;
+    border-radius: 50%;
+    color: blue;
+    width: 10px;
+    height: 10px;
+}
+
+.white{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 50%;
+    color: white;
+    width: 10px;
+    height: 10px;
+}
+
+.green{
+    border: 1px solid green;
+    background-color: green;
+    border-radius: 50%;
+    color: green;
+    width: 10px;
+    height: 10px;
+}

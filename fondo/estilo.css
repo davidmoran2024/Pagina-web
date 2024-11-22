@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+header{
+    background-color: blueviolet;
+}
+
+.section1{
+    height: 400px;
+    background-color: black;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/800px-Angular_full_color_logo.svg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.section2{
+    background-image: url("https://placehold.jp/be3737/ffffff/1000x1000.png");
+    height: 400px;
+}
+
+.section3{
+    height: 500px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTeNhddUQInfcuwztyqws-yWCaGB-y1gzJmg&s");
+    background-size: 100%;
+    background-attachment: fixed; 
+}
+
+.section4{
+    height: 1000px;
+}
