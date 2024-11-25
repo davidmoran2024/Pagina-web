@@ -1,75 +1,129 @@
 *{
     margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     height: 100%;
-    background-color: rgb(157, 200, 232);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.3s ease;
 }
 
+body:hover {
+    background-color: black;
+}
 .card{
-    box-shadow: #000000 0px 0px 50px;
-    margin: auto;
-    margin-top: 50px;
-    height: 700px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     background-color: #ddd;
     width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .card-header{
-    height: 350px;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJo3ypevXVbuWmJf-1raghrcTOJC6f47lBvQ&s");
+    background-color: #ccc;
+    text-align: center;
+    padding: 20px;
 }
-
+.card-title {
+    font-size: 24px;
+    color: black;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+.card-title:hover {
+    color: white;
+    background-color: black;
+}
 .card-content{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 40px;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+.image-container {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.product-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
 }
 
-h4{
+.product-image:hover {
+    transform: scaleX(-1);
+}
+
+.details-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .details-overlay {
+    opacity: 1;
+}
+
+.text-container h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.text-container h4 {
+    font-size: 18px;
     color: gray;
+    margin-bottom: 10px;
 }
 
-.size{
-    margin-top: 50px;
+.size, .color {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
-.color{
-    margin-top: 40px;
+.color-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
 }
+
+.red, .blue, .white, .green {
+    display: inline-block;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
 
 .red{
-    border: 1px solid red;
     background-color: red;
-    border-radius: 50%;
-    color: red;
-    width: 10px;
-    height: 10px;
 }
 
 .blue{
-    border: 1px solid blue;
     background-color: blue;
-    border-radius: 50%;
-    color: blue;
-    width: 10px;
-    height: 10px;
 }
 
 .white{
-    border: 1px solid white;
     background-color: white;
-    border-radius: 50%;
-    color: white;
-    width: 10px;
-    height: 10px;
+    border: 1px solid gray;
 }
 
 .green{
-    border: 1px solid green;
     background-color: green;
-    border-radius: 50%;
-    color: green;
-    width: 10px;
-    height: 10px;
 }
