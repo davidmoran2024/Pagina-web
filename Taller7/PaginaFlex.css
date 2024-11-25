@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6f0ff;
+}
+
+.encabezado-principal {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.titulo-principal {
+    font-size: 2em;
+}
+
+
+
+.contenedor-principal {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+.seccion-articulos {
+    flex: 2 1 60%;
+}
+
+.tarjeta-articulo {
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.etiqueta-fecha {
+    position: absolute;
+    top: 15px;
+    left: -50px;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.numero-fecha {
+    font-size: 1.5em;
+}
+
+.dia-semana {
+    font-size: 0.8em;
+}
+.contenedor-articulo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+    gap: 15px;
+}
+
+
+
+.seccion-texto {
+    flex: 1;
+}
+
+.titulo-articulo {
+    margin-bottom: 10px;
+    color: #003366;
+    font-size: 1.2em;
+}
+
+.descripcion-articulo {
+    font-size: 0.9em;
+    color: #333;
+    line-height: 1.5;
+}
+.seccion-imagenes {
+    display: flex;
+    gap: 10px;
+}
+
+.imagen-articulo {
+    max-width: 150px;
+    border-radius: 5px;
+}
+
+
+
+.barra-lateral {
+    flex: 1 1 30%;
+}
+
+.caja-informacion {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-informacion {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.cita-articulo {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.5;
+}
+.pie-pagina {
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.texto-pie {
+    font-size: 0.9em;
+}
