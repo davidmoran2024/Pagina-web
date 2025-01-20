@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Imagen</title>
+</head>
+<body>
+    <img id="imagen" src="descarga.jpg" alt="Imagen" width="300" height="200">
+    <br>
+
+
+    <button onclick="iniciarCambio()">Iniciar Cambio de Imagen</button>
+
+    <script>
+        // Aquí guardamos las direcciones de nuestras 5 imágenes
+        const imagenes = [
+            'descarga.jpg',
+            'descarga_(1).jpg',
+            'descarga_(2).jpg',
+            'descarga_(3).jpg',
+            'descarga_(4).jpg'
+        ];
+        let contador = 0;
+        let intervalo;
+
+        // Esta función cambia la imagen cada 2 segundos
+        function iniciarCambio() {
+            if (intervalo) {
+                clearInterval(intervalo); 
+            }
+
+            intervalo = setInterval(function() {
+
+                document.getElementById('imagen').src = imagenes[contador];
+                contador++;
+
+                if (contador >= imagenes.length) {
+                    contador = 0; 
+                }
+            }, 2000);
+        }
+    </script>
+
+</body>
+</html>
