@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Control Interactivo</title>
+
+</head>
+<body>
+    <h1 id="tituloPrincipal">Título de la Página</h1>
+
+    <button id="botonPanel">Mostrar Panel</button>
+
+    <div id="panelConfiguracion">
+        <h2>Configuración</h2>
+
+        <label for="selectorTema">Seleccionar tema:</label>
+        <select id="selectorTema">
+            <option value="white">Claro</option>
+            <option value="black">Oscuro</option>
+            <option value="lightblue">Azul</option>
+        </select>
+        <br><br>
+        <label for="cambiarTitulo">Nuevo título:</label>
+        <input type="text" id="cambiarTitulo" placeholder="Escribe un nuevo título">
+        <br><br>
+        <label>
+            <input type="checkbox" id="habilitarComentarios"> Habilitar comentarios
+        </label>
+        <br>
+        <textarea id="areaComentarios" rows="4" cols="40" disabled placeholder="Escribe aquí..."></textarea>
+        <br><br>
+    </div>
+    <script>
+        const botonPanel = document.getElementById('botonPanel');
+        const panelConfiguracion = document.getElementById('panelConfiguracion');
+        botonPanel.addEventListener('click', () => {if (panelConfiguracion.style.display === 'none' || panelConfiguracion.style.display === '') {
+                panelConfiguracion.style.display = 'block';
+                botonPanel.textContent = 'Ocultar Panel'; // Cambiar texto del botón
+            } else {
+                panelConfiguracion.style.display = 'none';
+                botonPanel.textContent = 'Mostrar Panel';
+            }
+        });
+
+        const selectorTema = document.getElementById('selectorTema');
+        selectorTema.addEventListener('change', () => {
+            document.body.style.backgroundColor = selectorTema.value;
+        });
+        const cambiarTitulo = document.getElementById('cambiarTitulo');
+        const tituloPrincipal = document.getElementById('tituloPrincipal');
+
+        cambiarTitulo.addEventListener('input', () => {
+            tituloPrincipal.textContent = cambiarTitulo.value || 'Título de la pgina'; 
+        });
+        const habilitarComentarios = document.getElementById('habilitarComentarios');
+        const areaComentarios = document.getElementById('areaComentarios');
+        habilitarComentarios.addEventListener('change', () => {
+            areaComentarios.disabled = !habilitarComentarios.checked;
+        });
+
+
+    </script>
+</body>
+</html>
